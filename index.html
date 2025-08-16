@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightli Help & Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 16px;
+        }
+        
+        .help-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .help-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .help-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .help-card-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .help-card h3 {
+            color: #2d3748;
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .help-card p {
+            color: #718096;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .support-section {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 32px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .support-section h2 {
+            color: #2d3748;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .support-section p {
+            color: #718096;
+            margin-bottom: 24px;
+        }
+        
+        .support-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .support-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .support-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        .support-btn.secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .support-btn.secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            .header {
+                padding: 24px 0;
+            }
+            
+            .help-sections {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .support-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .support-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">B</div>
+            <h1>Brightli Help Center</h1>
+            <p class="subtitle">Everything you need to know about using Brightli effectively</p>
+        </div>
+        
+        <div class="help-sections">
+            <a href="getting-started.html" class="help-card">
+                <div class="help-card-icon">🚀</div>
+                <h3>Getting Started Guide</h3>
+                <p>Learn how to schedule activities, set up your routine, and get the most out of Brightli</p>
+            </a>
+            
+            <a href="reflections.html" class="help-card">
+                <div class="help-card-icon">💭</div>
+                <h3>Completing Reflections</h3>
+                <p>Step-by-step guide to reflection prompts and how they help track your progress</p>
+            </a>
+            
+            <a href="progress-insights.html" class="help-card">
+                <div class="help-card-icon">📊</div>
+                <h3>Progress Insights</h3>
+                <p>Understanding why insights might not appear and how to ensure they generate properly</p>
+            </a>
+            
+            <a href="icloud-sync.html" class="help-card">
+                <div class="help-card-icon">☁️</div>
+                <h3>iCloud Sync Issues</h3>
+                <p>Troubleshooting data synchronization problems across your devices</p>
+            </a>
+            
+            <a href="notifications.html" class="help-card">
+                <div class="help-card-icon">🔔</div>
+                <h3>Notifications & Reminders</h3>
+                <p>Setting up activity reminders and managing notification preferences</p>
+            </a>
+            
+            <a href="premium-features.html" class="help-card">
+                <div class="help-card-icon">👑</div>
+                <h3>Premium Features</h3>
+                <p>Unlock advanced themes, insights, and premium functionality</p>
+            </a>
+        </div>
+        
+        <div class="support-section">
+            <h2>Still Need Help?</h2>
+            <p>Can't find what you're looking for? Our support team is here to help you get the most out of Brightli.</p>
+            <div class="support-buttons">
+                <a href="support-form.html" class="support-btn">Get Support</a>
+                <a href="feedback-form.html" class="support-btn secondary">Leave Feedback</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
