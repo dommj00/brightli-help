@@ -28,7 +28,6 @@
         }
         
         .header {
-            text-align: center;
             padding: 30px 0;
             border-bottom: 2px solid #f0f0f0;
             margin-bottom: 30px;
@@ -207,7 +206,7 @@
                 <strong>Submission failed.</strong> Please check your internet connection and try again.
             </div>
             
-            <form id="feedback-form">
+            <form id="feedback-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Optional">
@@ -253,8 +252,12 @@
                 
                 <div class="form-group">
                     <label for="feedback">Your Feedback <span class="required">*</span></label>
-                    <textarea id="feedback" name="feedback" placeholder="Tell us what you think! What features would you like to see? What could we improve? What do you love about the app?" required></textarea>
+                    <textarea id="feedback" name="message" placeholder="Tell us what you think! What features would you like to see? What could we improve? What do you love about the app?" required></textarea>
                 </div>
+                
+                <!-- Hidden fields for additional context -->
+                <input type="hidden" name="_subject" value="Brightli App Feedback">
+                <input type="hidden" name="_next" value="">
                 
                 <button type="submit" class="submit-btn" id="submit-btn">
                     Submit Feedback
@@ -310,7 +313,7 @@
             highlightStars(currentRating);
         }
         
-        // Form submission
+        // Form submission with Formspree
         document.getElementById('feedback-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -328,34 +331,16 @@
             
             // Get form data
             const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
             
-            // Create email body
-            const emailBody = `
-Feedback from Brightli App
-
-Name: ${data.name || 'Anonymous'}
-Email: ${data.email || 'Not provided'}
-Rating: ${data.rating ? `${data.rating} stars (${ratingLabels[data.rating]})` : 'Not rated'}
-Category: ${data.category}
-Subject: ${data.subject}
-
-Feedback:
-${data.feedback}
-
----
-Sent from Brightli Feedback Form
-            `.trim();
-            
-            // Create mailto link
-            const mailtoLink = `mailto:info@brightliapp.com?subject=Brightli Feedback: ${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
-            
-            // Simulate submission delay
-            setTimeout(() => {
-                try {
-                    // Open email client
-                    window.location.href = mailtoLink;
-                    
+            // Submit to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
                     // Show success message
                     successMsg.style.display = 'block';
                     
@@ -367,15 +352,17 @@ Sent from Brightli Feedback Form
                     
                     // Scroll to top
                     window.scrollTo(0, 0);
-                } catch (error) {
-                    console.error('Error:', error);
-                    errorMsg.style.display = 'block';
-                } finally {
-                    // Re-enable submit button
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Submit Feedback';
+                } else {
+                    throw new Error('Form submission failed');
                 }
-            }, 1000);
+            }).catch(error => {
+                console.error('Error:', error);
+                errorMsg.style.display = 'block';
+            }).finally(() => {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Feedback';
+            });
         });
     </script>
 </body>
