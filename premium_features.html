@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Features - Brightli Help</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            padding: 30px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #4a5568;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+        
+        .premium-card {
+            background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+            border: 2px solid #c084fc;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .check-mark {
+            color: #10b981;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .x-mark {
+            color: #ef4444;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .crown-icon {
+            color: #f59e0b;
+            margin-right: 8px;
+        }
+        
+        .premium-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        
+        .price-highlight {
+            background: #fef5e7;
+            border: 1px solid #f6ad55;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .price-amount {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+        
+        .price-period {
+            color: #718096;
+            font-size: 14px;
+        }
+        
+        .tip-box {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .tip-icon {
+            color: #319795;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .comparison-table {
+                font-size: 14px;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Help Center</a>
+            <h1>👑 Premium Features</h1>
+            <p>Unlock the full potential of Brightli with advanced wellness tracking</p>
+        </div>
+        
+        <div class="premium-card">
+            <h2 style="border: none; margin: 0 0 16px 0; color: #6b46c1;">
+                <span class="crown-icon">👑</span>Brightli Premium
+            </h2>
+            <p style="margin-bottom: 16px; font-size: 16px;">Transform your wellness journey with powerful insights, unlimited themes, and advanced tracking features designed to help you build lasting healthy habits.</p>
+            
+            <div class="price-highlight">
+                <div class="price-amount">$4.99</div>
+                <div class="price-period">per month • Cancel anytime</div>
+            </div>
+        </div>
+        
+        <h2>🎨 Themes & Personalization</h2>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>All 12 Premium Themes <span class="premium-badge">Premium</span></h3>
+            <p>Access our complete collection of beautiful, carefully crafted themes:</p>
+            <ul>
+                <li><strong>Natural Collection:</strong> Ocean Breeze, Forest Zen, Sunset Glow, Lavender Fields</li>
+                <li><strong>Cultural Collection:</strong> Sakura Bloom, Nordic Minimal, Mediterranean</li>
+                <li><strong>Lifestyle Collection:</strong> Coffee House, Midnight Focus</li>
+                <li><strong>Seasonal Collection:</strong> Autumn Harvest, Winter Frost</li>
+            </ul>
+            <p><em>Free users get 3 core themes: Brightli Classic, Ocean Breeze, and Forest Zen.</em></p>
+        </div>
+        
+        <h2>📊 Advanced Progress Insights</h2>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>Detailed Analytics <span class="premium-badge">Premium</span></h3>
+            <ul>
+                <li><strong>Monthly progress reports</strong> with trend analysis</li>
+                <li><strong>Activity effectiveness ratings</strong> based on your mood data</li>
+                <li><strong>Optimal timing recommendations</strong> for each activity type</li>
+                <li><strong>Correlation insights</strong> between activities and well-being</li>
+                <li><strong>Custom goal tracking</strong> with achievement analytics</li>
+            </ul>
+        </div>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>Extended Reflection History <span class="premium-badge">Premium</span></h3>
+            <ul>
+                <li><strong>Unlimited reflection history</strong> (vs 30 days for free users)</li>
+                <li><strong>Search and filter</strong> past reflections</li>
+                <li><strong>Export reflection data</strong> for personal analysis</li>
+                <li><strong>Mood trend visualization</strong> over time</li>
+            </ul>
+        </div>
+        
+        <h2>☁️ Data & Sync Features</h2>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>iCloud Sync <span class="premium-badge">Premium</span></h3>
+            <ul>
+                <li><strong>Seamless synchronization</strong> across all your Apple devices</li>
+                <li><strong>Automatic backup</strong> of all your activities and reflections</li>
+                <li><strong>Real-time sync</strong> of completions and progress</li>
+                <li><strong>Secure, encrypted data</strong> storage in your personal iCloud</li>
+            </ul>
+        </div>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>Data Export <span class="premium-badge">Premium</span></h3>
+            <ul>
+                <li><strong>Export your activity data</strong> to CSV or PDF</li>
+                <li><strong>Share progress reports</strong> with healthcare providers</li>
+                <li><strong>Archive your wellness journey</strong> for long-term tracking</li>
+                <li><strong>Data portability</strong> - your data stays yours</li>
+            </ul>
+        </div>
+        
+        <h2>🔔 Enhanced Notifications</h2>
+        
+        <div class="feature-card">
+            <h3><span class="crown-icon">👑</span>Advanced Notification Controls <span class="premium-badge">Premium</span></h3>
+            <ul>
+                <li><strong>Custom notification schedules</strong> for different activity types</li>
+                <li><strong>Quiet hours setting</strong> to avoid disruptions</li>
+                <li><strong>Reflection reminder timing</strong> customization</li>
+                <li><strong>Weekly insight notifications</strong> when reports are ready</li>
+                <li><strong>Smart notification frequency</strong> based on your engagement</li>
+            </ul>
+        </div>
+        
+        <h2>📈 Free vs Premium Comparison</h2>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Free</th>
+                    <th>Premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Activity Scheduling</td>
+                    <td><span class="check-mark">✓</span> Unlimited</td>
+                    <td><span class="check-mark">✓</span> Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Activity Completion Tracking</td>
+                    <td><span class="check-mark">✓</span> Full access</td>
+                    <td><span class="check-mark">✓</span> Full access</td>
+                </tr>
+                <tr>
+                    <td>Basic Reflections</td>
+                    <td><span class="check-mark">✓</span> Included</td>
+                    <td><span class="check-mark">✓</span> Included</td>
+                </tr>
+                <tr>
+                    <td>Themes</td>
+                    <td>3 core themes</td>
+                    <td><span class="check-mark">✓</span> All 12 themes</td>
+                </tr>
+                <tr>
+                    <td>Progress Insights</td>
+                    <td>Basic weekly</td>
+                    <td><span class="check-mark">✓</span> Advanced + monthly</td>
+                </tr>
+                <tr>
+                    <td>Reflection History</td>
+                    <td>30 days</td>
+                    <td><span class="check-mark">✓</span> Unlimited</td>
+                </tr>
+                <tr>
+                    <td>iCloud Sync</td>
+                    <td><span class="x-mark">✗</span></td>
+                    <td><span class="check-mark">✓</span> Full sync</td>
+                </tr>
+                <tr>
+                    <td>Data Export</td>
+                    <td><span class="x-mark">✗</span></td>
+                    <td><span class="check-mark">✓</span> CSV/PDF export</td>
+                </tr>
+                <tr>
+                    <td>Advanced Notifications</td>
+                    <td>Basic reminders</td>
+                    <td><span class="check-mark">✓</span> Full customization</td>
+                </tr>
+                <tr>
+                    <td>Customer Support</td>
+                    <td>Community support</td>
+                    <td><span class="check-mark">✓</span> Priority support</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>💳 Subscription Management</h2>
+        
+        <h3>How to Subscribe</h3>
+        <div class="feature-card">
+            <ol>
+                <li>Open Brightli and go to <strong>Settings</strong></li>
+                <li>Tap <strong>Account</strong></li>
+                <li>Select <strong>"Upgrade to Premium"</strong></li>
+                <li>Choose your subscription plan</li>
+                <li>Complete purchase through the App Store</li>
+                <li>Premium features activate immediately</li>
+            </ol>
+        </div>
+        
+        <h3>Managing Your Subscription</h3>
+        <div class="feature-card">
+            <p>Subscriptions are managed through the App Store:</p>
+            <ol>
+                <li>Open iPhone <strong>Settings</strong></li>
+                <li>Tap your <strong>Apple ID</strong> at the top</li>
+                <li>Select <strong>Subscriptions</strong></li>
+                <li>Find <strong>Brightli</strong> and tap it</li>
+                <li>Manage or cancel your subscription</li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <strong>Cancellation:</strong> You can cancel anytime through iOS Settings. Premium features remain active until the end of your current billing period.
+        </div>
+        
+        <h2>🎁 Free Trial</h2>
+        
+        <div class="feature-card">
+            <h3>7-Day Free Trial</h3>
+            <p>New users get a <strong>7-day free trial</strong> of Premium features:</p>
+            <ul>
+                <li>Access all themes immediately</li>
+                <li>Try advanced insights and analytics</li>
+                <li>Set up iCloud sync across devices</li>
+                <li>Experience enhanced notifications</li>
+                <li>No commitment - cancel anytime during trial</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <span class="tip-icon">🔄</span>
+            <strong>Trial Tips:</strong> Use the full 7 days to explore all Premium features. Set up iCloud sync early to see how seamless multi-device usage can be!
+        </div>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <h3>What happens if I cancel Premium?</h3>
+        <p>You'll keep Premium features until your current billing period ends. After that, you'll return to the free tier with access to core features and 3 themes.</p>
+        
+        <h3>Can I switch between monthly and yearly plans?</h3>
+        <p>Yes! Change your subscription plan anytime through iOS Settings > Subscriptions. Changes take effect at your next billing cycle.</p>
+        
+        <h3>Do my reflection and activity data stay if I cancel?</h3>
+        <p>Yes! All your activities, completions, and reflections remain in the app. You'll just lose access to advanced analytics and extended history views.</p>
+        
+        <h3>Can I use Premium on multiple devices?</h3>
+        <p>Absolutely! Premium subscription covers all devices logged in with the same Apple ID. iCloud sync keeps everything in perfect harmony.</p>
+        
+        <h3>Is there a family sharing option?</h3>
+        <p>Currently, Brightli subscriptions are individual. We're exploring family sharing options for future updates.</p>
+        
+        <div class="tip-box">
+            <span class="tip-icon">🌟</span>
+            <strong>Best Value:</strong> Premium features are designed to grow with your wellness journey. The deeper insights and seamless sync become more valuable as you build longer habits!
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+            <a href="index.html" style="color: #667eea; text-decoration: none;">← Back to Help Center</a>
+        </p>
+    </div>
+</body>
+</html>

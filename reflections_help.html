@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completing Reflections - Brightli Help</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            padding: 30px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #4a5568;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+        
+        .step-card {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .tip-box {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fef5e7;
+            border: 1px solid #f6ad55;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .tip-icon {
+            color: #319795;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .warning-icon {
+            color: #dd6b20;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .screenshot-placeholder {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e0;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #718096;
+            font-style: italic;
+        }
+        
+        .reflection-example {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .rating-display {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .star {
+            color: #fbbf24;
+            font-size: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Help Center</a>
+            <h1>Completing Reflections</h1>
+            <p>Learn how reflections help track your progress and improve your well-being</p>
+        </div>
+        
+        <h2>💭 What Are Reflections?</h2>
+        <p>Reflections are short prompts that appear after you complete activities. They help you:</p>
+        <ul>
+            <li><strong>Track your mood</strong> and energy levels</li>
+            <li><strong>Identify patterns</strong> in your well-being</li>
+            <li><strong>Build self-awareness</strong> about what activities work best for you</li>
+            <li><strong>Generate insights</strong> for your progress reports</li>
+        </ul>
+        
+        <h2>🎯 When Do Reflections Appear?</h2>
+        
+        <div class="step-card">
+            <h3><span class="step-number">1</span>After Completing Activities</h3>
+            <p>When you mark an activity as complete, you might see a reflection prompt appear.</p>
+            <div class="screenshot-placeholder">
+                [Screenshot: Completed activity with reflection prompt]
+            </div>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">2</span>Smart Timing</h3>
+            <p>Brightli uses intelligent algorithms to show reflections at the right moments:</p>
+            <ul>
+                <li>After completing significant activities</li>
+                <li>When patterns in your behavior are detected</li>
+                <li>At optimal times for meaningful reflection</li>
+                <li>Not too frequently to avoid reflection fatigue</li>
+            </ul>
+        </div>
+        
+        <h2>📝 Types of Reflection Questions</h2>
+        
+        <h3>Mood & Energy Rating</h3>
+        <div class="reflection-example">
+            <p><strong>Question:</strong> "How are you feeling right now?"</p>
+            <div class="rating-display">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                <span style="margin-left: 10px; color: #4a5568;">4/5 - Pretty good</span>
+            </div>
+        </div>
+        
+        <h3>Activity Impact</h3>
+        <div class="reflection-example">
+            <p><strong>Question:</strong> "How did this morning run affect your energy?"</p>
+            <p><strong>Options:</strong> Increased energy • No change • Decreased energy</p>
+        </div>
+        
+        <h3>Motivation & Progress</h3>
+        <div class="reflection-example">
+            <p><strong>Question:</strong> "What motivated you to complete this activity today?"</p>
+            <p><strong>Options:</strong> Personal goals • Feeling good • Routine • External motivation</p>
+        </div>
+        
+        <h3>Open-Ended Thoughts</h3>
+        <div class="reflection-example">
+            <p><strong>Question:</strong> "Any thoughts about today's meditation session?"</p>
+            <p><strong>Answer:</strong> "Felt more focused than usual. The 10-minute session was perfect length."</p>
+        </div>
+        
+        <h2>✨ How to Complete Reflections</h2>
+        
+        <div class="step-card">
+            <h3><span class="step-number">1</span>Read the Prompt Carefully</h3>
+            <p>Take a moment to understand what the reflection is asking. The questions are designed to help you think about your experience.</p>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">2</span>Be Honest</h3>
+            <p>Your reflections are private and for your benefit. Honest responses lead to better insights about your patterns and progress.</p>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">3</span>Don't Overthink</h3>
+            <p>Your first instinct is usually the most accurate. Spend 10-30 seconds reflecting, then provide your response.</p>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">4</span>Submit Your Response</h3>
+            <p>Tap your rating, select your option, or type your thoughts, then submit. The data is saved immediately.</p>
+        </div>
+        
+        <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <strong>Pro Tip:</strong> Consistent reflection over time creates the most valuable insights. Even quick 5-second responses are helpful!
+        </div>
+        
+        <h2>📊 How Reflections Generate Insights</h2>
+        
+        <h3>Pattern Detection</h3>
+        <p>Brightli analyzes your reflection data to identify:</p>
+        <ul>
+            <li><strong>Best times</strong> for different activities</li>
+            <li><strong>Activities that boost</strong> your mood most</li>
+            <li><strong>Correlation patterns</strong> between activities and well-being</li>
+            <li><strong>Progress trends</strong> over time</li>
+        </ul>
+        
+        <h3>Progress Reports</h3>
+        <p>Your reflections contribute to:</p>
+        <ul>
+            <li>Weekly progress summaries</li>
+            <li>Mood trend analysis</li>
+            <li>Activity effectiveness ratings</li>
+            <li>Personalized recommendations</li>
+        </ul>
+        
+        <div class="warning-box">
+            <span class="warning-icon">⚠️</span>
+            <strong>Note:</strong> Progress insights require at least 5-7 days of reflection data to generate meaningful patterns.
+        </div>
+        
+        <h2>🔄 Managing Reflection Frequency</h2>
+        
+        <h3>Premium Users</h3>
+        <p>With Premium, you can customize reflection settings:</p>
+        <ul>
+            <li>Adjust how often reflections appear</li>
+            <li>Choose preferred types of questions</li>
+            <li>Set quiet hours when reflections won't show</li>
+            <li>Access detailed reflection history</li>
+        </ul>
+        
+        <h3>Free Users</h3>
+        <p>Free users get smart, automatic reflection timing designed for optimal engagement without overwhelming you.</p>
+        
+        <h2>❓ Common Questions</h2>
+        
+        <h3>Why don't I see reflections after every activity?</h3>
+        <p>Brightli uses smart algorithms to show reflections at meaningful moments. Too many reflections can become tedious, so we balance frequency with value.</p>
+        
+        <h3>Can I go back and add reflections I missed?</h3>
+        <p>Currently, reflections are tied to the moment of activity completion for authenticity. Focus on future reflections rather than past ones.</p>
+        
+        <h3>Are my reflections private?</h3>
+        <p>Yes! Your reflection data is completely private and used only to generate your personal insights. We never share or analyze individual responses.</p>
+        
+        <h3>What if I don't want to answer a reflection?</h3>
+        <p>Reflections are always optional. You can dismiss them without penalty, though consistent responses provide better insights.</p>
+        
+        <div class="tip-box">
+            <span class="tip-icon">🎯</span>
+            <strong>Goal:</strong> Try to complete reflections for at least one week to see how insights develop and help your journey!
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+            <a href="index.html" style="color: #667eea; text-decoration: none;">← Back to Help Center</a>
+        </p>
+    </div>
+</body>
+</html>

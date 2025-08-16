@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications & Reminders - Brightli Help</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            padding: 30px 0;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #4a5568;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+        
+        .step-card {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .tip-box {
+            background: #e6fffa;
+            border: 1px solid #81e6d9;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fed7d7;
+            border: 1px solid #f56565;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .premium-box {
+            background: #faf5ff;
+            border: 1px solid #c084fc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        
+        .tip-icon {
+            color: #319795;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .warning-icon {
+            color: #e53e3e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .premium-icon {
+            color: #9333ea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .notification-example {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 15px 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        .notification-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #2d3748;
+        }
+        
+        .notification-body {
+            color: #4a5568;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Help Center</a>
+            <h1>Notifications & Reminders</h1>
+            <p>Set up activity reminders and manage notification preferences</p>
+        </div>
+        
+        <h2>🔔 Types of Brightli Notifications</h2>
+        
+        <h3>Activity Reminders</h3>
+        <p>Get notified before your scheduled activities begin:</p>
+        <div class="notification-example">
+            <div class="notification-title">🧠 Morning Meditation</div>
+            <div class="notification-body">Starting in 15 minutes • Tap to view details</div>
+        </div>
+        
+        <h3>Reflection Prompts</h3>
+        <p>Gentle reminders to complete reflection after activities:</p>
+        <div class="notification-example">
+            <div class="notification-title">💭 Quick Reflection</div>
+            <div class="notification-body">How did your workout feel? Share your thoughts</div>
+        </div>
+        
+        <h3>Progress Celebrations</h3>
+        <p>Celebrate your achievements and milestones:</p>
+        <div class="notification-example">
+            <div class="notification-title">🎉 Streak Achievement!</div>
+            <div class="notification-body">You've completed activities 7 days in a row!</div>
+        </div>
+        
+        <h3>Weekly Insights</h3>
+        <p>Get notified when new progress insights are available:</p>
+        <div class="notification-example">
+            <div class="notification-title">📊 Weekly Insights Ready</div>
+            <div class="notification-body">See how your activities affected your mood this week</div>
+        </div>
+        
+        <h2>⚙️ Setting Up Activity Reminders</h2>
+        
+        <div class="step-card">
+            <h3><span class="step-number">1</span>Enable During Activity Creation</h3>
+            <p>When scheduling a new activity:</p>
+            <ol>
+                <li>Tap the <strong>+ button</strong> to create an activity</li>
+                <li>Fill in the activity details</li>
+                <li>Toggle <strong>"Reminder"</strong> to ON</li>
+                <li>Choose how many minutes before: 5, 15, 30, or 60 minutes</li>
+                <li>Save the activity</li>
+            </ol>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">2</span>Add Reminders to Existing Activities</h3>
+            <p>For activities already created:</p>
+            <ol>
+                <li>Tap on the activity to view details</li>
+                <li>Tap <strong>"Edit"</strong></li>
+                <li>Toggle <strong>"Reminder"</strong> to ON</li>
+                <li>Select your preferred timing</li>
+                <li>Save changes</li>
+            </ol>
+        </div>
+        
+        <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <strong>Smart Timing:</strong> 15-minute reminders work well for most activities. Use 30-60 minutes for activities requiring preparation.
+        </div>
+        
+        <h2>🔧 Managing Notification Settings</h2>
+        
+        <div class="premium-box">
+            <span class="premium-icon">👑</span>
+            <strong>Premium Feature:</strong> Advanced notification customization is available for Premium subscribers.
+        </div>
+        
+        <h3>For Premium Users</h3>
+        <p>Access detailed notification controls in <strong>Settings > Notifications & Alerts</strong>:</p>
+        
+        <div class="step-card">
+            <h3>Activity Reminders</h3>
+            <ul>
+                <li><strong>Enable/disable</strong> reminder notifications</li>
+                <li><strong>Set default timing</strong> for new activities</li>
+                <li><strong>Choose notification sound</strong> and style</li>
+                <li><strong>Set quiet hours</strong> when reminders won't appear</li>
+            </ul>
+        </div>
+        
+        <div class="step-card">
+            <h3>Reflection Reminders</h3>
+            <ul>
+                <li><strong>Control frequency</strong> of reflection prompts</li>
+                <li><strong>Set timing</strong> - how long after completion</li>
+                <li><strong>Choose days</strong> when reflections appear</li>
+                <li><strong>Customize prompt style</strong></li>
+            </ul>
+        </div>
+        
+        <div class="step-card">
+            <h3>Progress Notifications</h3>
+            <ul>
+                <li><strong>Weekly insight</strong> notifications</li>
+                <li><strong>Streak celebration</strong> alerts</li>
+                <li><strong>Goal achievement</strong> notifications</li>
+                <li><strong>Monthly progress</strong> summaries</li>
+            </ul>
+        </div>
+        
+        <h3>For Free Users</h3>
+        <p>Free users get smart, automatic notification timing optimized for engagement without overwhelming you.</p>
+        
+        <h2>📱 iOS Notification Permissions</h2>
+        
+        <div class="step-card">
+            <h3><span class="step-number">1</span>Initial Permission Setup</h3>
+            <p>When you first open Brightli, you'll be asked for notification permission. Always choose <strong>"Allow"</strong> to receive reminders.</p>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">2</span>If You Denied Permission</h3>
+            <p>To enable notifications later:</p>
+            <ol>
+                <li>Open iPhone <strong>Settings</strong></li>
+                <li>Scroll down and tap <strong>Brightli</strong></li>
+                <li>Tap <strong>Notifications</strong></li>
+                <li>Toggle <strong>"Allow Notifications"</strong> to ON</li>
+                <li>Choose your preferred alert style</li>
+            </ol>
+        </div>
+        
+        <div class="step-card">
+            <h3><span class="step-number">3</span>Customize iOS Notification Style</h3>
+            <p>In iPhone Settings > Brightli > Notifications:</p>
+            <ul>
+                <li><strong>Lock Screen:</strong> Show notifications when locked</li>
+                <li><strong>Notification Center:</strong> Keep notifications in center</li>
+                <li><strong>Banners:</strong> Choose temporary or persistent alerts</li>
+                <li><strong>Sounds:</strong> Enable notification sounds</li>
+                <li><strong>Badges:</strong> Show red number on app icon</li>
+            </ul>
+        </div>
+        
+        <h2>🔇 Managing Notification Frequency</h2>
+        
+        <h3>If You're Getting Too Many Notifications</h3>
+        <div class="step-card">
+            <p><strong>Premium users can:</strong></p>
+            <ul>
+                <li>Reduce reflection reminder frequency</li>
+                <li>Set longer quiet hours</li>
+                <li>Disable certain notification types</li>
+                <li>Customize timing for each category</li>
+            </ul>
+        </div>
+        
+        <div class="step-card">
+            <p><strong>All users can:</strong></p>
+            <ul>
+                <li>Turn off individual activity reminders</li>
+                <li>Schedule fewer activities with reminders</li>
+                <li>Use iOS Do Not Disturb for quiet times</li>
+                <li>Disable notifications entirely in iOS Settings</li>
+            </ul>
+        </div>
+        
+        <h3>If You're Not Getting Enough Notifications</h3>
+        <div class="step-card">
+            <ul>
+                <li>Add reminders to more activities</li>
+                <li>Check iOS notification permissions</li>
+                <li>Ensure Brightli is allowed during Do Not Disturb</li>
+                <li>Verify notification timing settings</li>
+            </ul>
+        </div>
+        
+        <h2>🚫 Troubleshooting Notification Issues</h2>
+        
+        <h3>Notifications Not Appearing</h3>
+        <div class="step-card">
+            <p><strong>Check these settings:</strong></p>
+            <ol>
+                <li><strong>iOS Settings > Brightli > Notifications</strong> - Ensure enabled</li>
+                <li><strong>Do Not Disturb</strong> - Check if DND is blocking notifications</li>
+                <li><strong>Low Power Mode</strong> - Can delay notifications</li>
+                <li><strong>App permissions</strong> - Verify Brightli has notification access</li>
+                <li><strong>Time zone</strong> - Ensure device time zone is correct</li>
+            </ol>
+        </div>
+        
+        <h3>Wrong Notification Timing</h3>
+        <div class="step-card">
+            <p><strong>Possible causes:</strong></p>
+            <ul>
+                <li>Device time zone incorrect</li>
+                <li>Activity scheduled in wrong time zone</li>
+                <li>iOS notification delay due to system load</li>
+                <li>Notification timing setting misconfigured</li>
+            </ul>
+        </div>
+        
+        <h3>Notifications Appearing Late</h3>
+        <div class="step-card">
+            <p><strong>Solutions:</strong></p>
+            <ul>
+                <li>Restart your iPhone</li>
+                <li>Close and reopen Brightli</li>
+                <li>Check for iOS updates</li>
+                <li>Ensure good internet connectivity</li>
+                <li
