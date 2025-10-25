@@ -10,23 +10,23 @@
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 100px 1.5rem 3rem;
+            padding: 100px 2rem 4rem;
         }
         
         .faq-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         
         .faq-header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: var(--dark-text);
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
         
         .faq-header p {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             color: var(--medium-text);
         }
         
@@ -72,6 +72,16 @@
         .faq-item.active .faq-answer {
             max-height: 500px;
             margin-top: 1rem;
+        }
+        
+        .faq-answer ul, .faq-answer ol {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 0.25rem;
         }
         
         .back-link {
@@ -150,71 +160,104 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Is Brightli free to use?</span>
+                    <span>How do I complete reflections?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Brightli offers both free and premium tiers. The free version includes basic activity planning, reflection tracking, and limited insights. Premium unlocks unlimited tracked activities, advanced analytics, premium themes, cloud sync across devices, and data export features.
+                    After completing a tracked activity, you'll see a reflection prompt asking you to rate your experience (1-5 stars) and answer 2-3 context-aware questions. Simply rate how it went, respond thoughtfully to the questions (be honest—they're private!), and tap "Save Reflection." You can also complete pending reflections anytime by going to the Reflections tab.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>What platforms is Brightli available on?</span>
+                    <span>I can't find activities from previous days to reflect on. How do I locate them?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Brightli is currently available on iOS (iPhone and iPad). An Android version is in development and coming soon. Sign up for updates on our social media channels to be notified when Android launches.
+                    There are several ways to find older activities:
+                    <ul>
+                        <li>Go to the <strong>Tracking</strong> tab and switch to <strong>Week</strong> or <strong>Month</strong> view to see past activities</li>
+                        <li>Use the calendar picker to select a specific date and view that day's activities</li>
+                        <li>Scroll through past weeks to locate the activity you're looking for</li>
+                    </ul>
+                    Once you find it, tap on the activity and mark it complete. Then head to <strong>Reflections</strong> → <strong>Pending Reflections</strong> to complete your reflection for that activity.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Is my data private and secure?</span>
+                    <span>My iCloud sync isn't working. What should I do?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Yes! All your personal data, including activities, reflections, and insights, stays on your device or in your personal iCloud storage. We don't have access to your personal content, and we never sell your data. Privacy is built into Brightli's foundation.
+                    If iCloud sync isn't working, try these steps:
+                    <ol>
+                        <li>Make sure you're signed into iCloud on all your devices (Settings → Your Name → iCloud)</li>
+                        <li>Verify that iCloud Drive is enabled for Brightli (Settings → Your Name → iCloud → Manage Storage → Brightli)</li>
+                        <li>Check that you have available iCloud storage space</li>
+                        <li>Try toggling iCloud Sync off and back on in Brightli (Settings → Sync → iCloud Sync)</li>
+                        <li>Ensure all devices are running the latest version of iOS and Brightli</li>
+                        <li>Give it a few minutes—initial sync can take time depending on your data size</li>
+                    </ol>
+                    If problems persist after trying these steps, contact support and we'll help troubleshoot further.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How do insights work?</span>
+                    <span>Is my data private?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Brightli analyzes your reflection data to identify patterns in your behavior, mood, and activity effectiveness. After consistently tracking activities and completing reflections for about a week, you'll start seeing insights about when you perform best, which activities boost your mood, and personalized recommendations for optimizing your routine.
+                    Yes, absolutely! Brightli is built with privacy at its core. All your data—activities, reflections, journal entries, and insights—is stored locally on your device. If you enable iCloud Sync (a Premium feature), your data syncs to your personal iCloud account, not Brightli's servers. You have complete control and ownership of your information.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Can I sync my data across multiple devices?</span>
+                    <span>What's the difference between Free and Premium?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Yes! Premium users can enable iCloud sync to seamlessly access their activities, reflections, and insights across all their iOS devices. Your data syncs automatically and securely through your personal iCloud account.
+                    <strong>Free users get:</strong> Unlimited activity scheduling, 3 tracked activities per week with basic reflections, access to 3 themes, basic insights, and local data storage.
+                    <br><br>
+                    <strong>Premium users ($4.99/month) get:</strong> Unlimited tracked activities and reflections, 300+ premium reflection questions, access to all 40+ themes, advanced insights and analytics, iCloud sync across devices, data export capabilities, and priority support.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>What are activity categories?</span>
+                    <span>Why aren't my insights showing up?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Brightli organizes activities into four categories: Strong (physical activities), Smart (mental wellness and learning), Happy (social connections and joy), and Organized (productivity and tasks). This helps you maintain balance across different areas of your life and see where you're investing your time.
+                    Insights require enough data to identify meaningful patterns. You'll need to complete at least 10-15 activities with reflections before Brightli can generate reliable insights. Also, make sure you're rating your activities and answering reflection questions thoughtfully—this helps the algorithm understand your patterns better.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How do I get started with Brightli?</span>
+                    <span>Can I change my activity categories?</span>
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Getting started is simple! Download Brightli from the App Store, complete the quick onboarding, and schedule your first activity with tracking enabled. When you complete the activity, you'll receive your first reflection prompt. Continue tracking activities and completing reflections to start discovering patterns and gaining insights about what works best for you.
+                    Yes! You can choose different category frameworks in Settings → Customization → Activity Categories. Brightli offers category sets optimized for different focuses (wellness, productivity, creativity). Switching between them is seamless and maintains your reflection history and insights.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I delete my data?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    You have several options:
+                    <ul>
+                        <li><strong>Delete individual items:</strong> Tap on any activity or reflection and select "Delete"</li>
+                        <li><strong>Delete bulk data:</strong> Go to Settings → Account → Data Management → Manage Data</li>
+                        <li><strong>Delete everything:</strong> Settings → Account → Advanced Options → Delete All Data</li>
+                    </ul>
+                    Remember to export your data first if you want to keep a backup! For detailed instructions, visit our How-To guide.
                 </div>
             </div>
 
@@ -224,7 +267,7 @@
                     <span class="faq-icon">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Yes! Premium users can export their activity history, reflections, and insights data in various formats (CSV, PDF) for personal record-keeping or analysis in other tools.
+                    Yes! Premium users can export their activity history, reflections, and insights data in various formats (CSV, JSON, PDF) for personal record-keeping or analysis in other tools. Go to Settings → Account → Export Data to access this feature.
                 </div>
             </div>
 
@@ -254,8 +297,8 @@
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="getting-started.html">Getting Started</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-tos.html">How-Tos</a></li>
                         <li><a href="faqs.html">FAQs</a></li>
                     </ul>
                 </div>
