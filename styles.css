@@ -853,6 +853,11 @@ section {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Visible shadow */
     }
     
+    /* Hide the Download button that appears in top right on mobile */
+    .navbar .btn-nav {
+        display: none;
+    }
+    
     .nav-links {
         position: fixed;
         top: 60px;
@@ -862,20 +867,20 @@ section {
         flex-direction: column;
         padding: 2rem;
         box-shadow: var(--shadow-lg);
-        transform: translateY(-110%); /* Move further up to completely hide */
-        transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
         gap: 1rem;
-        z-index: 999;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none; /* Prevent any clicks when hidden */
+        z-index: 999; /* Ensure proper layering */
+    }
+    
+    /* Show Download button inside the mobile menu */
+    .nav-links.active .btn-nav {
+        display: block;
+        text-align: center;
     }
     
     .nav-links.active {
         transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all; /* Re-enable clicks when visible */
     }
     
     /* Make sure logo and menu button are visible */
