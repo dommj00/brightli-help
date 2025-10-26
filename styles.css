@@ -853,6 +853,11 @@ section {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Visible shadow */
     }
     
+    /* Hide the Download button that appears in top right on mobile */
+    .navbar .btn-nav {
+        display: none;
+    }
+    
     .nav-links {
         position: fixed;
         top: 60px;
@@ -866,6 +871,12 @@ section {
         transition: transform 0.3s;
         gap: 1rem;
         z-index: 999; /* Ensure proper layering */
+    }
+    
+    /* Show Download button inside the mobile menu */
+    .nav-links.active .btn-nav {
+        display: block;
+        text-align: center;
     }
     
     .nav-links.active {
