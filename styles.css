@@ -1085,8 +1085,12 @@ section {
 }
 
 .help-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .help-card h3 {
