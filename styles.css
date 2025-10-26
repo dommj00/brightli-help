@@ -815,6 +815,13 @@ section {
     margin-bottom: 0.5rem;
     font-size: 0.9375rem;
 }
+.howto-list li {
+    color: var(--medium-text);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 400;  /* Normal weight, not bold */
+}
 
 .guide-section strong {
     color: var(--dark-text);
