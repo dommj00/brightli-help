@@ -977,7 +977,7 @@ section {
 .step-box h4 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: var(--primary-blue);
+    color: var(--dark-text);
     font-size: 1rem;
 }
 
