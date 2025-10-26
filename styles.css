@@ -379,6 +379,14 @@ section {
     font-weight: 700;
     color: var(--dark-text);
     margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.step-icon {
+    font-size: 1.5rem;
 }
 
 .step-content p {
@@ -386,11 +394,19 @@ section {
     margin-bottom: var(--spacing-md);
 }
 
+.step-image-container {
+    max-width: 300px;
+    margin: var(--spacing-sm) auto 0;
+    padding: var(--spacing-sm);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
 .step-image {
     width: 100%;
-    max-width: 300px;
     border-radius: var(--radius-md);
-    margin-top: var(--spacing-sm);
+    display: block;
 }
 
 /* ===== FEATURES SHOWCASE ===== */
@@ -855,21 +871,29 @@ section {
     
     .nav-links {
         position: fixed;
-        top: 60px;
+        top: 70px;
         left: 0;
         right: 0;
         background: var(--white);
         flex-direction: column;
-        padding: 2rem;
+        padding: var(--spacing-md);
         box-shadow: var(--shadow-lg);
         transform: translateY(-100%);
-        transition: transform 0.3s;
-        gap: 1rem;
-        z-index: 999; /* Ensure proper layering */
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s, max-height 0s 0.3s, visibility 0s 0.3s;
+        pointer-events: none;
     }
-    
+        
     .nav-links.active {
         transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+        pointer-events: all;
+        transition: all 0.3s;
     }
     
     /* Make sure logo and menu button are visible */
