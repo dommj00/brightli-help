@@ -871,6 +871,8 @@ section {
         transition: transform 0.3s;
         gap: 1rem;
         z-index: 999; /* Ensure proper layering */
+        opacity: 0; /* Hide completely when closed */
+        visibility: hidden; /* Prevent interaction when closed */
     }
     
     /* Show Download button inside the mobile menu */
@@ -881,6 +883,8 @@ section {
     
     .nav-links.active {
         transform: translateY(0);
+        opacity: 1; /* Show when open */
+        visibility: visible; /* Allow interaction when open */
     }
     
     /* Make sure logo and menu button are visible */
