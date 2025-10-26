@@ -855,27 +855,25 @@ section {
     
     .nav-links {
         position: fixed;
-        top: 60px;
+        top: 70px;
         left: 0;
         right: 0;
         background: var(--white);
         flex-direction: column;
-        padding: 2rem;
+        padding: var(--spacing-md);
         box-shadow: var(--shadow-lg);
-        transform: translateY(-110%); /* Move further up to completely hide */
-        transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
-        gap: 1rem;
-        z-index: 999;
+        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        pointer-events: none; /* Prevent any clicks when hidden */
+        transition: all 0.3s;
+        pointer-events: none;
     }
-    
+        
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
-        pointer-events: all; /* Re-enable clicks when visible */
+        pointer-events: all;
     }
     
     /* Make sure logo and menu button are visible */
