@@ -865,7 +865,9 @@ section {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s, max-height 0s 0.3s, visibility 0s 0.3s;
         pointer-events: none;
     }
         
@@ -873,7 +875,9 @@ section {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        max-height: 500px;
         pointer-events: all;
+        transition: all 0.3s;
     }
     
     /* Make sure logo and menu button are visible */
