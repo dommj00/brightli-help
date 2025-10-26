@@ -1369,13 +1369,6 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
-.step-box h4 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: var(--primary-blue);
-    font-size: 1rem;
-}
-
 .step-box p {
     margin: 0;
     font-size: 0.9375rem;
