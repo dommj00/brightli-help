@@ -734,6 +734,513 @@ section {
     color: var(--medium-text);
 }
 
+/* ===== GUIDE STYLES (Getting Started, Features, How-Tos) ===== */
+/* Add this to your styles.css file - replace the existing guide styles section */
+
+.guide-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 2rem 4rem;
+}
+
+/* Guide Header - More subtle sizing */
+.guide-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.guide-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.guide-header p {
+    font-size: 1rem;
+    color: var(--medium-text);
+    line-height: 1.6;
+}
+
+/* Guide Sections - Reduced sizes */
+.guide-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.guide-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-blue);
+    line-height: 1.3;
+}
+
+.guide-section h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-top: var(--spacing-md);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.guide-section h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.guide-section p {
+    color: var(--medium-text);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9375rem;
+}
+
+.guide-section ul,
+.guide-section ol {
+    margin-left: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.guide-section li {
+    color: var(--medium-text);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+}
+
+.guide-section strong {
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+.guide-section em {
+    font-style: italic;
+    color: var(--dark-text);
+}
+
+.guide-section code {
+    background: var(--light-gray);
+    padding: 0.125rem 0.375rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: var(--dark-text);
+}
+
+/* Tip Box - Clean design with no left border */
+.tip-box {
+    background: var(--soft-yellow);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.tip-box strong {
+    color: var(--dark-text);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tip-box p {
+    color: var(--dark-text);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* Info Box - Clean design with no left border */
+.info-box {
+    background: var(--light-blue);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.info-box strong {
+    color: var(--dark-text);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info-box p {
+    color: var(--dark-text);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* Warning Box - Clean design with no left border */
+.warning-box {
+    background: #FEE2E2;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.warning-box strong {
+    color: #991B1B;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.warning-box p {
+    color: #991B1B;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* Success Box - Clean design with no left border */
+.success-box {
+    background: #D1FAE5;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.success-box strong {
+    color: #065F46;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.success-box p {
+    color: #065F46;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* Note Box with Icon */
+.note-box {
+    display: flex;
+    gap: var(--spacing-sm);
+    background: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.note-icon {
+    color: var(--primary-blue);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.note-content strong {
+    color: var(--dark-text);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.note-content p {
+    color: var(--medium-text);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* Step-by-step boxes */
+.step-box {
+    background: var(--white);
+    border: 2px solid var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-box h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-blue);
+    font-size: 1rem;
+}
+
+.step-box p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--spacing-lg);
+    color: var(--primary-blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    font-size: 0.9375rem;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Guide CTA Section */
+.guide-cta {
+    text-align: center;
+    margin: var(--spacing-xl) 0 var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--light-blue), var(--soft-yellow));
+    border-radius: var(--radius-lg);
+}
+
+.guide-cta h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 0.75rem;
+}
+
+.guide-cta p {
+    color: var(--medium-text);
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9375rem;
+}
+
+/* Help Center Styles */
+.help-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 2rem 4rem;
+}
+
+.help-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.help-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 0.75rem;
+}
+
+.help-header p {
+    font-size: 1rem;
+    color: var(--medium-text);
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.help-card {
+    background: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.help-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.help-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 0.5rem;
+}
+
+.help-card p {
+    font-size: 0.875rem;
+    color: var(--medium-text);
+    line-height: 1.6;
+}
+
+.help-contact {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.help-contact h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 0.75rem;
+}
+
+.help-contact p {
+    color: var(--medium-text);
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9375rem;
+}
+
+/* Mobile Responsive for Guide Pages */
+@media (max-width: 768px) {
+    .guide-container,
+    .help-container {
+        padding: 90px 1rem 3rem;
+    }
+
+    .guide-header h1,
+    .help-header h1 {
+        font-size: 1.625rem;
+    }
+
+    .guide-header p,
+    .help-header p {
+        font-size: 0.9375rem;
+    }
+
+    .guide-section h2 {
+        font-size: 1.375rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .guide-section h3 {
+        font-size: 1.0625rem;
+        margin-top: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .guide-section h4 {
+        font-size: 0.9375rem;
+    }
+
+    .guide-section p,
+    .guide-section li {
+        font-size: 0.875rem;
+    }
+
+    .tip-box,
+    .info-box,
+    .warning-box,
+    .success-box,
+    .note-box,
+    .step-box {
+        padding: 1rem;
+    }
+
+    .tip-box strong,
+    .info-box strong,
+    .warning-box strong,
+    .success-box strong,
+    .note-content strong {
+        font-size: 0.9375rem;
+    }
+
+    .tip-box p,
+    .info-box p,
+    .warning-box p,
+    .success-box p,
+    .note-content p,
+    .step-box p {
+        font-size: 0.875rem;
+    }
+
+    .guide-cta {
+        padding: var(--spacing-md);
+    }
+
+    .guide-cta h2 {
+        font-size: 1.375rem;
+    }
+
+    .guide-cta p {
+        font-size: 0.875rem;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .help-card {
+        padding: 1.25rem;
+    }
+
+    .help-card h3 {
+        font-size: 1rem;
+    }
+
+    .help-card p {
+        font-size: 0.8125rem;
+    }
+
+    .help-contact h2 {
+        font-size: 1.375rem;
+    }
+
+    .back-link {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-container,
+    .help-container {
+        padding: 80px 1rem 2rem;
+    }
+
+    .guide-header h1,
+    .help-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .guide-section h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .guide-section h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .guide-section ul,
+    .guide-section ol {
+        margin-left: 1.25rem;
+    }
+
+    .guide-cta h2,
+    .help-contact h2 {
+        font-size: 1.25rem;
+    }
+
+    .help-icon {
+        font-size: 2rem;
+    }
+}
+
 /* ===== ENHANCED MOBILE RESPONSIVE STYLES ===== */
 /* Replace or add to existing @media queries in styles.css */
 
