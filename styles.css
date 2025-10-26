@@ -680,6 +680,13 @@ section {
     margin: var(--spacing-md) 0 var(--spacing-sm);
 }
 
+.guide-section h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+}
+
 .guide-section p {
     color: var(--medium-text);
     line-height: 1.8;
@@ -840,6 +847,12 @@ section {
 
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 768px) {
+    /* Fixed mobile navbar visibility */
+    .navbar {
+        background: rgba(255, 255, 255, 1); /* Full opacity for visibility */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Visible shadow */
+    }
+    
     .nav-links {
         position: fixed;
         top: 60px;
@@ -852,14 +865,33 @@ section {
         transform: translateY(-100%);
         transition: transform 0.3s;
         gap: 1rem;
+        z-index: 999; /* Ensure proper layering */
     }
     
     .nav-links.active {
         transform: translateY(0);
     }
     
+    /* Make sure logo and menu button are visible */
+    .nav-logo {
+        z-index: 1001;
+    }
+    
     .mobile-menu-btn {
         display: flex;
+        z-index: 1001;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+    
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
     }
     
     .hero-grid {
