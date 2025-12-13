@@ -4,341 +4,569 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Step-by-step guides for using Brightli - Download data, reflections, and more">
-    <title>How-Tos - Brightli Help</title>
+    <title>How-To Guides - Brightli Help</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-logo">
-                    <a href="index.html"><span class="logo-text">Brightli</span></a>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="sun"></i>
                 </div>
-                <div class="nav-links" id="navLinks">
-                    <a href="index.html#features">Features</a>
-                    <a href="index.html#how-it-works">How It Works</a>
-                    <a href="help.html">Help Center</a>
-                    <a href="faqs.html">FAQs</a>
-                    <a href="index.html#download" class="btn-nav">Download</a>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <span class="logo-text">Brightli</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="about.html">About</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="help.html">Help</a>
+                <a href="index.html#download" class="btn-nav">Download</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- How-Tos Content -->
-    <div class="guide-container">
-        <div class="guide-header">
-            <h1>How-To Guides</h1>
-            <p>Step-by-step instructions for getting the most out of Brightli</p>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
         </div>
-
-        <!-- Download Data -->
-        <div class="guide-section">
-            <h2>How to Download Your Reflections & Journal Entries</h2>
-            <p>Export your data to keep a backup or analyze your growth journey outside the app.</p>
-            
-            <h3>Step-by-Step:</h3>
-            <p>Follow these steps to export your data:</p>
-            
-            <div class="step-box">
-                <h4>1. Open Settings</h4>
-                <p>Tap the Settings icon in the bottom-right corner of the main navigation bar</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Navigate to Data Export</h4>
-                <p>Select Data Export from the settings menu</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Choose Your Data Type</h4>
-                <p>Select the Reflections or Journal button</p>
-            </div>
-
-            <div class="step-box">
-                <h4>4. Select Entries</h4>
-                <p>Select one or more journal entries or reflection responses</p>
-            </div>
-
-            <div class="step-box">
-                <h4>5. Export</h4>
-                <p>Tap Export Data and choose how to share or save the file (email it to yourself, save to Files app, etc.)</p>
-            </div>
-            
-            <div class="info-box">
-                <strong>Note</strong>
-                <p>Your exported data includes all local data that was stored on your device.</p>
+        <div class="container">
+            <div class="page-hero-content scroll-reveal">
+                <div class="hero-badge">
+                    <i data-lucide="book-open"></i>
+                    <span>Guides</span>
+                </div>
+                <h1>How-To Guides</h1>
+                <p>Step-by-step instructions for getting the most out of Brightli</p>
             </div>
         </div>
+    </section>
 
-        <!-- Understanding Reflections -->
-        <div class="guide-section">
-            <h2>Understanding the Reflection Flow</h2>
-            <p>Learn how reflections work and how to make them most valuable.</p>
-            
-            <h3>When Do Reflections Appear?</h3>
-            <p>Reflections are available when you mark a tracked activity as complete. If you've enabled "Activity Tracking" when creating an activity, Brightli will prompt you to reflect after you complete it.</p>
-            
-            <h3>The Reflection Process</h3>
-            
-            <div class="step-box">
-                <h4>1. Mark Complete</h4>
-                <p>Tap the activity and select the three dots in the activity details pop up screen</p>
-            </div>
+    <!-- Guides Content -->
+    <section class="guides-section">
+        <div class="container">
+            <div class="guides-container">
+                
+                <!-- Guide 1: Export Data -->
+                <div class="guide-accordion scroll-reveal" data-delay="0">
+                    <button class="guide-accordion-header" aria-expanded="false">
+                        <div class="guide-accordion-icon">
+                            <i data-lucide="download"></i>
+                        </div>
+                        <div class="guide-accordion-title">
+                            <h2>How to Download Your Reflections & Journal Entries</h2>
+                            <p>Export your data to keep a backup or analyze your growth journey</p>
+                        </div>
+                        <div class="guide-accordion-toggle">
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="guide-accordion-content">
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Open Settings</h4>
+                                    <p>Tap the Settings icon in the bottom-right corner of the main navigation bar</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Navigate to Data Export</h4>
+                                    <p>Select Data Export from the settings menu</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Choose Your Data Type</h4>
+                                    <p>Select the Reflections or Journal button</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">4</div>
+                                <div class="guide-step-content">
+                                    <h4>Select Entries</h4>
+                                    <p>Select one or more journal entries or reflection responses</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">5</div>
+                                <div class="guide-step-content">
+                                    <h4>Export</h4>
+                                    <p>Tap Export Data and choose how to share or save the file (email it to yourself, save to Files app, etc.)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide-note info">
+                            <i data-lucide="info"></i>
+                            <div>
+                                <strong>Note</strong>
+                                <p>Your exported data includes all local data that was stored on your device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="step-box">
-                <h4>2. Start Reflection Flow</h4>
-                <p>Find the activity in the Pending Reflections section or the Pending tab in the Reflections tile and tap on it to start the reflection flow</p>
-            </div>
+                <!-- Guide 2: Understanding Reflections -->
+                <div class="guide-accordion scroll-reveal" data-delay="1">
+                    <button class="guide-accordion-header" aria-expanded="false">
+                        <div class="guide-accordion-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="guide-accordion-title">
+                            <h2>Understanding the Reflection Flow</h2>
+                            <p>Learn how reflections work and how to make them most valuable</p>
+                        </div>
+                        <div class="guide-accordion-toggle">
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="guide-accordion-content">
+                        <div class="guide-intro">
+                            <h3>When Do Reflections Appear?</h3>
+                            <p>Reflections are available when you mark a tracked activity as complete. If you've enabled "Activity Tracking" when creating an activity, Brightli will prompt you to reflect after you complete it.</p>
+                        </div>
+                        
+                        <h3>The Reflection Process</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Mark Complete</h4>
+                                    <p>Tap the activity and select the three dots in the activity details pop up screen</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Start Reflection Flow</h4>
+                                    <p>Find the activity in the Pending Reflections section or the Pending tab in the Reflections tile and tap on it</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Rate Your Experience</h4>
+                                    <p>You'll see a 1-5 star rating scale, tap to rate how the activity went (long-press for half-star ratings)</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">4</div>
+                                <div class="guide-step-content">
+                                    <h4>Answer Questions</h4>
+                                    <p>Based on your activity and rating Brightli will select an appropriate question</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">5</div>
+                                <div class="guide-step-content">
+                                    <h4>Respond Thoughtfully</h4>
+                                    <p>Type your responses, these are only for you so be honest</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">6</div>
+                                <div class="guide-step-content">
+                                    <h4>Save</h4>
+                                    <p>Tap Submit to save your reflection</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="step-box">
-                <h4>3. Rate Your Experience</h4>
-                <p>You'll see a 1-5 star rating scale, tap to rate how the activity went (long-press for half-star ratings)</p>
-            </div>
+                        <h3>Different Response Paths</h3>
+                        <p>Brightli adapts its questions based on your rating:</p>
+                        <div class="rating-paths">
+                            <div class="rating-path high">
+                                <div class="rating-stars">
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                </div>
+                                <strong>High Ratings (4-5 stars)</strong>
+                                <p>Questions focus on what made the experience successful and how to replicate it.</p>
+                            </div>
+                            <div class="rating-path mid">
+                                <div class="rating-stars">
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                </div>
+                                <strong>Mid Ratings (3 stars)</strong>
+                                <p>Questions explore what could have been better and what worked well.</p>
+                            </div>
+                            <div class="rating-path low">
+                                <div class="rating-stars">
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                </div>
+                                <strong>Low Ratings (1-2 stars)</strong>
+                                <p>Questions help identify obstacles and consider alternatives.</p>
+                            </div>
+                        </div>
 
-            <div class="step-box">
-                <h4>4. Answer Questions</h4>
-                <p>Based on your activity and rating Brightli will select an appropriate question</p>
-            </div>
+                        <h3>Tips for Better Reflections</h3>
+                        <div class="tips-grid">
+                            <div class="guide-note tip">
+                                <i data-lucide="target"></i>
+                                <div>
+                                    <strong>Be Specific</strong>
+                                    <p>Instead of "It was good," try "I felt energized because I started early and the weather was perfect."</p>
+                                </div>
+                            </div>
+                            <div class="guide-note tip">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <strong>Note Context</strong>
+                                    <p>Mention factors like time of day, who you were with, your mood beforehand, weather, or location.</p>
+                                </div>
+                            </div>
+                            <div class="guide-note tip">
+                                <i data-lucide="heart"></i>
+                                <div>
+                                    <strong>Be Honest</strong>
+                                    <p>Your reflections are private. Being truthful gives you better insights over time.</p>
+                                </div>
+                            </div>
+                            <div class="guide-note tip">
+                                <i data-lucide="clock"></i>
+                                <div>
+                                    <strong>Keep It Reasonable</strong>
+                                    <p>A sentence or two with key details is often enough to capture your experience.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="step-box">
-                <h4>5. Respond Thoughtfully</h4>
-                <p>Type your responses, these are only for you so be honest</p>
-            </div>
+                        <div class="guide-note info">
+                            <i data-lucide="info"></i>
+                            <div>
+                                <strong>Skipped Reflections</strong>
+                                <p>If you assign a rating but skip the response, the activity will still generate insights. However, for best results, always submit a reflection response.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="step-box">
-                <h4>6. Save or Skip</h4>
-                <p>Tap Submit to save your reflection</p>
+                <!-- Guide 3: Complete Reflections -->
+                <div class="guide-accordion scroll-reveal" data-delay="2">
+                    <button class="guide-accordion-header" aria-expanded="false">
+                        <div class="guide-accordion-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <div class="guide-accordion-title">
+                            <h2>How to Complete Reflections</h2>
+                            <p>Catch up on pending reflections or complete a new one</p>
+                        </div>
+                        <div class="guide-accordion-toggle">
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="guide-accordion-content">
+                        <h3>For New Activities</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Complete the Activity</h4>
+                                    <p>Complete a tracked activity by tapping the activity</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Mark as Complete</h4>
+                                    <p>Select Complete from the three-dot menu in the pop up screen</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Reflection Begins</h4>
+                                    <p>The reflection flow begins immediately</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">4</div>
+                                <div class="guide-step-content">
+                                    <h4>Rate & Respond</h4>
+                                    <p>Rate your experience (1-5 stars), answer the questions that appear, and tap Submit</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>For Pending Reflections</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Open Reflections</h4>
+                                    <p>Tap the Reflections tile</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Go to Pending Tab</h4>
+                                    <p>Select the Pending tab in the Reflections screen</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Select Activity</h4>
+                                    <p>Tap on any activity in the list</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">4</div>
+                                <div class="guide-step-content">
+                                    <h4>Complete Reflection</h4>
+                                    <p>The reflection prompt opens with the activity details. Rate and answer the questions, then tap Submit</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-note info">
+                            <i data-lucide="calendar"></i>
+                            <div>
+                                <strong>Finding Older Activities</strong>
+                                <p>Go to the Tracking tab and switch to Week or Month view, use the Calendar to select a specific date, or scroll through past weeks. Once found, tap the activity, mark it complete, then head to Reflections → Pending.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide 4: Delete Data -->
+                <div class="guide-accordion scroll-reveal" data-delay="3">
+                    <button class="guide-accordion-header" aria-expanded="false">
+                        <div class="guide-accordion-icon">
+                            <i data-lucide="trash-2"></i>
+                        </div>
+                        <div class="guide-accordion-title">
+                            <h2>How to Delete Your Data</h2>
+                            <p>You have full control over your data</p>
+                        </div>
+                        <div class="guide-accordion-toggle">
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="guide-accordion-content">
+                        <h3>Delete Individual Activities</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Find the Activity</h4>
+                                    <p>Find the activity you want to delete on your main screen or calendar</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Open Activity Details</h4>
+                                    <p>Tap on the activity to open its details</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Delete</h4>
+                                    <p>Tap the Three Dots menu icon (⋯) or Edit, then tap Delete Activity</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Delete Reflections & Journal Entries</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Open Settings</h4>
+                                    <p>Go to the Settings icon in the navigation bar</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Navigate to Data Export</h4>
+                                    <p>Select Data, then go to the Data Export section</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Select Items</h4>
+                                    <p>Tap the journal entries or reflections you wish to delete</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">4</div>
+                                <div class="guide-step-content">
+                                    <h4>Delete Selected</h4>
+                                    <p>Tap Delete Selected and confirm by typing "DELETE" when prompted</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Delete All Data (Complete Reset)</h3>
+                        <div class="guide-note warning">
+                            <i data-lucide="alert-triangle"></i>
+                            <div>
+                                <strong>Warning</strong>
+                                <p>This action cannot be undone. Make sure to export your data first if you want to keep a backup.</p>
+                            </div>
+                        </div>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <div class="guide-step-number">1</div>
+                                <div class="guide-step-content">
+                                    <h4>Open Settings</h4>
+                                    <p>Tap Settings on the navigation bar</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">2</div>
+                                <div class="guide-step-content">
+                                    <h4>Find Clear All Data</h4>
+                                    <p>Scroll to the bottom to find Clear All Data</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <div class="guide-step-number">3</div>
+                                <div class="guide-step-content">
+                                    <h4>Confirm Deletion</h4>
+                                    <p>Type "DELETE" to confirm and tap Delete</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>What Gets Deleted</h3>
+                        <div class="delete-info">
+                            <div class="delete-item">
+                                <strong>Local Data:</strong>
+                                <p>All data stored on your device is immediately deleted</p>
+                            </div>
+                            <div class="delete-item">
+                                <strong>Settings:</strong>
+                                <p>Your app settings, themes, and preferences are reset to defaults</p>
+                            </div>
+                        </div>
+
+                        <div class="guide-note tip">
+                            <i data-lucide="lightbulb"></i>
+                            <div>
+                                <strong>Fresh Start Option</strong>
+                                <p>If you want to start fresh but keep your settings and preferences, choose Delete Activities, Insights, or Journal entries in Settings → Account instead. This preserves your app configuration while clearing your history.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            <h3>Different Response Paths</h3>
-            <p>Brightli adapts its questions based on your rating:</p>
-            <p><strong>High Ratings (4-5 stars):</strong> Questions focus on what made the experience successful and how to replicate it.</p>
-            <p><strong>Mid Ratings (3 stars):</strong> Questions explore what could have been better and what worked well.</p>
-            <p><strong>Low Ratings (1-2 stars):</strong> Questions help identify obstacles and consider alternatives.</p>
-            
-            <h3>How to Approach Reflection Responses</h3>
-            
-            <div class="tip-box">
-                <strong>Be Specific</strong>
-                <p>Instead of "It was good," try "I felt energized because I started early and the weather was perfect." This level of detail is more helpful in identifying patterns.</p>
-            </div>
-            
-            <div class="tip-box">
-                <strong>Note Context</strong>
-                <p>Mention factors like time of day, who you were with, your mood beforehand, weather, location or anything else that might have impacted your experience.</p>
-            </div>
-            
-            <div class="tip-box">
-                <strong>Be Honest</strong>
-                <p>Your reflections are private. Being truthful (even about struggles or frustrations) gives you better insights over time.</p>
-            </div>
-            
-            <div class="tip-box">
-                <strong>Keep It Reasonable</strong>
-                <p>You don't need to write paragraphs. A sentence or two with key details is often enough to capture the essence of your experience.</p>
-            </div>
-            
-            <h3>Skipped Reflections</h3>
-            <p>If you assign your reflection a rating but skip the response, this activity will still generate insights. However, for best results, always submit a reflection response. You can choose the 'Something Different' reflection question option if you want to keep it short.</p>
         </div>
+    </section>
 
-        <!-- Complete Reflections -->
-        <div class="guide-section">
-            <h2>How to Complete Reflections</h2>
-            <p>Whether you're catching up on pending reflections or completing a new one.</p>
-            
-            <h3>For New Activities</h3>
-            
-            <div class="step-box">
-                <h4>1. Complete the Activity</h4>
-                <p>Complete a tracked activity by tapping the activity</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Mark as Complete</h4>
-                <p>Select Complete from the three-dot menu in the pop up screen</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Reflection Begins</h4>
-                <p>The reflection flow begins immediately</p>
-            </div>
-
-            <div class="step-box">
-                <h4>4. Rate & Respond</h4>
-                <p>Rate your experience (1-5 stars), answer the questions that appear, and tap Submit</p>
-            </div>
-            
-            <h3>For Pending Reflections</h3>
-            
-            <div class="step-box">
-                <h4>1. Open Reflections</h4>
-                <p>Tap the Reflections tile</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Go to Pending Tab</h4>
-                <p>Select the Pending tab in the Reflections screen</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Select Activity</h4>
-                <p>Tap on any activity in the list</p>
-            </div>
-
-            <div class="step-box">
-                <h4>4. Complete Reflection</h4>
-                <p>The reflection prompt opens with the activity details. Rate and answer the questions, then tap Submit</p>
-            </div>
-            
-            <div class="info-box">
-                <strong>Finding Older Activities</strong>
-                <p>If you're looking for activities from a previous day or week to reflect on, you have a few options:</p>
-                <ul>
-                    <li>Go to the Tracking tab and switch to the Week or Month tab to see past activities</li>
-                    <li>Use the Calendar to select a specific date and scan the list of activities for that day</li>
-                    <li>Scroll through past weeks to locate the activity</li>
-                    <li>Once you find it, tap the activity and mark it complete</li>
-                    <li>Then head to Reflections → Pending to complete the reflection</li>
-                </ul>
+    <!-- Help CTA -->
+    <section class="help-cta-section">
+        <div class="container">
+            <div class="help-cta-card scroll-reveal">
+                <div class="help-cta-icon">
+                    <i data-lucide="message-circle-question"></i>
+                </div>
+                <h2>Need More Help?</h2>
+                <p>Check out our other guides or contact support</p>
+                <div class="help-cta-buttons">
+                    <a href="faqs.html" class="btn btn-primary">
+                        <i data-lucide="help-circle"></i>
+                        View FAQs
+                    </a>
+                    <a href="support.html" class="btn btn-secondary">
+                        <i data-lucide="mail"></i>
+                        Contact Support
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Delete Data -->
-        <div class="guide-section">
-            <h2>How to Delete Your Data</h2>
-            <p>You have full control over your data. Delete specific items or everything at once.</p>
-            
-            <h3>Delete Individual Activities</h3>
-            
-            <div class="step-box">
-                <h4>1. Find the Activity</h4>
-                <p>Find the activity you want to delete on your main screen or calendar</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Open Activity Details</h4>
-                <p>Tap on the activity to open its details</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Delete</h4>
-                <p>Tap the Three Dots menu icon (⋯) or Edit, then tap Delete Activity</p>
-            </div>
-            
-            <h3>Delete Reflections & Journal Entries</h3>
-            
-            <div class="step-box">
-                <h4>1. Open Settings</h4>
-                <p>Go to the Settings icon in the navigation bar</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Navigate to Data Export</h4>
-                <p>Select Data, then go to the Data Export section</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Select Items</h4>
-                <p>Tap the journal entries or reflections you wish to delete</p>
-            </div>
-
-            <div class="step-box">
-                <h4>4. Delete Selected</h4>
-                <p>Tap Delete Selected and confirm by typing "DELETE" when prompted</p>
-            </div>
-            
-            <h3>Delete All Data (Complete Reset)</h3>
-            
-            <div class="warning-box">
-                <strong>Warning</strong>
-                <p>This action cannot be undone. Make sure to export your data first if you want to keep a backup.</p>
-            </div>
-            
-            <div class="step-box">
-                <h4>1. Open Settings</h4>
-                <p>Tap Settings on the navigation bar</p>
-            </div>
-
-            <div class="step-box">
-                <h4>2. Find Clear All Data</h4>
-                <p>Scroll to the bottom to find Clear All Data</p>
-            </div>
-
-            <div class="step-box">
-                <h4>3. Confirm Deletion</h4>
-                <p>Type "DELETE" to confirm and tap Delete</p>
-            </div>
-            
-            <h3>What Gets Deleted</h3>
-            <p><strong>Local Data:</strong> All data stored on your device is immediately deleted</p>
-            <p><strong>Settings:</strong> Your app settings, themes, and preferences are reset to defaults</p>
-            
-            <div class="tip-box">
-                <strong>Fresh Start Option</strong>
-                <p>If you want to start fresh but keep your settings and preferences, choose Delete Activities, Insights, or Journal entries in Settings → Account instead of a complete data deletion. This preserves your app configuration while clearing your history.</p>
-            </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="guide-cta">
-            <h2>Need More Help?</h2>
-            <p>Check out our other guides or contact support</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="faqs.html" class="btn btn-primary">View FAQs</a>
-                <a href="support.html" class="btn btn-secondary">Contact Support</a>
-            </div>
-        </div>
-
-        <a href="help.html" class="back-link">← Back to Help Center</a>
+    <!-- Back Link -->
+    <div class="container">
+        <a href="help.html" class="back-link scroll-reveal">
+            <i data-lucide="arrow-left"></i>
+            Back to Help Center
+        </a>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3 class="footer-logo">Brightli</h3>
-                    <p class="footer-tagline">Be inspired to grow Everyday</p>
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <span class="logo-text">Brightli</span>
+                    </a>
+                    <p class="footer-tagline">Be inspired to grow every day</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="getting-started.html">Getting Started</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="how-tos.html">How-Tos</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                    </ul>
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul class="footer-links">
+                            <li><a href="getting-started.html">Getting Started</a></li>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="how-tos.html">How-Tos</a></li>
+                            <li><a href="support.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Legal & More</h4>
-                    <ul class="footer-links">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
-                        <li><a href="support.html">Contact Support</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
+                <div class="footer-social">
                     <h4>Follow Us</h4>
                     <div class="social-links">
                         <a href="https://www.instagram.com/brightliapp" target="_blank" aria-label="Instagram">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
                         <a href="https://www.tiktok.com/@brightliapp" target="_blank" aria-label="TikTok">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                         </a>
                         <a href="https://x.com/brightliapp" target="_blank" aria-label="X (Twitter)">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
                         <a href="https://bsky.app/profile/brightliapp.bsky.social" target="_blank" aria-label="BlueSky">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -350,5 +578,33 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Accordion functionality for How-To guides
+        document.querySelectorAll('.guide-accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordion = button.parentElement;
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                
+                // Close all other accordions
+                document.querySelectorAll('.guide-accordion').forEach(acc => {
+                    acc.classList.remove('active');
+                    acc.querySelector('.guide-accordion-header').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Toggle current accordion
+                if (!isExpanded) {
+                    accordion.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+        
+        // Open first accordion by default
+        const firstAccordion = document.querySelector('.guide-accordion');
+        if (firstAccordion) {
+            firstAccordion.classList.add('active');
+            firstAccordion.querySelector('.guide-accordion-header').setAttribute('aria-expanded', 'true');
+        }
+    </script>
 </body>
 </html>
