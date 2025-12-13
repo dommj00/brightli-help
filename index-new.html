@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brightli - Plan smarter. Grow wiser. The only planner with built-in reflection intelligence for meaningful personal growth.">
+    <title>Brightli - Plan Smarter. Grow Wiser.</title>
+    <link rel="stylesheet" href="styles-new.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="sun"></i>
+                </div>
+                <span class="logo-text">Brightli</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="about.html">About</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="help.html">Help</a>
+                <a href="#download" class="btn-nav">Download</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge animate-fade-in">
+                        <i data-lucide="sparkles"></i>
+                        <span>The only planner with reflection intelligence</span>
+                    </div>
+                    <h1 class="hero-title animate-fade-in-up">
+                        <span class="title-line">Plan smarter.</span>
+                        <span class="title-line title-gradient" id="rotatingText">Grow wiser.</span>
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in-up delay-1">
+                        Most apps track what you do. Brightli helps you understand <em>why</em> — so you can actually change.
+                    </p>
+                    <div class="hero-cta animate-fade-in-up delay-2">
+                        <a href="https://apps.apple.com/app/brightli" class="btn btn-primary" target="_blank">
+                            <i data-lucide="download"></i>
+                            Download for iOS
+                        </a>
+                        <a href="#coming-soon" class="btn btn-secondary">
+                            Coming to Android
+                        </a>
+                    </div>
+                    <div class="hero-stats animate-fade-in-up delay-3">
+                        <div class="stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">Reflection questions</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Beautiful themes</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Privacy focused</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in-up delay-2">
+                    <div class="phone-mockup">
+                        <div class="phone-glow"></div>
+                        <div class="phone-frame">
+                            <img src="assets/screenshot1.jpg" alt="Brightli App Dashboard" class="phone-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-card scroll-reveal">
+                <div class="section-header centered">
+                    <h2>Productivity apps are missing something</h2>
+                    <p class="section-description">You check boxes. You track streaks. But a month later, nothing's really changed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Loop Section -->
+    <section class="loop-section" id="how-it-works">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>Close the productivity loop</h2>
+                <p class="section-description">The complete cycle that helps you grow</p>
+            </div>
+            <div class="loop-visual">
+                <div class="loop-step scroll-reveal" data-delay="0">
+                    <div class="loop-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>Plan</h3>
+                    <p>Schedule activities with intention</p>
+                </div>
+                <div class="loop-arrow scroll-reveal" data-delay="1">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="loop-step scroll-reveal" data-delay="2">
+                    <div class="loop-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>Do</h3>
+                    <p>Complete your activities</p>
+                </div>
+                <div class="loop-arrow scroll-reveal" data-delay="3">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="loop-step scroll-reveal" data-delay="4">
+                    <div class="loop-icon active">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3>Reflect</h3>
+                    <p>Answer guided questions</p>
+                </div>
+                <div class="loop-arrow scroll-reveal" data-delay="5">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="loop-step scroll-reveal" data-delay="6">
+                    <div class="loop-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Learn</h3>
+                    <p>Discover your patterns</p>
+                </div>
+                <div class="loop-arrow scroll-reveal" data-delay="7">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="loop-step scroll-reveal" data-delay="8">
+                    <div class="loop-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3>Adapt</h3>
+                    <p>Make informed changes</p>
+                </div>
+            </div>
+            <div class="loop-screenshot scroll-reveal">
+                <img src="assets/screenshot3.jpg" alt="Activity Creation" class="feature-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>Built for real growth</h2>
+                <p class="section-description">Features that close the productivity loop</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card scroll-reveal" data-delay="0">
+                    <div class="feature-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Reflection Intelligence</h3>
+                    <p>300+ questions that adapt to your ratings and patterns. Not random prompts—real insight.</p>
+                    <div class="feature-image-wrapper">
+                        <img src="assets/screenshot4.jpg" alt="Intelligent Reflections">
+                    </div>
+                </div>
+                <div class="feature-card scroll-reveal" data-delay="1">
+                    <div class="feature-icon">
+                        <i data-lucide="calendar-check"></i>
+                    </div>
+                    <h3>Flexible Planning</h3>
+                    <p>Timeline, cards, or compact view. Schedule activities your way with smart reminders.</p>
+                    <div class="feature-image-wrapper">
+                        <img src="assets/screenshot1.jpg" alt="Activity Planning">
+                    </div>
+                </div>
+                <div class="feature-card scroll-reveal" data-delay="2">
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>Meaningful Insights</h3>
+                    <p>Track progress over time and discover what actually brightens your day.</p>
+                    <div class="feature-image-wrapper">
+                        <img src="assets/screenshot2.jpg" alt="Insights Dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>How Brightli Works</h2>
+                <p class="section-description">Three simple steps to meaningful growth</p>
+            </div>
+            <div class="steps-container">
+                <div class="step scroll-reveal" data-delay="0">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Be inspired to grow every day</h3>
+                        <p>Schedule activities you want to track. Whether it's exercise, work projects, or personal time—plan what matters to you.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/screenshot1.jpg" alt="Step 1">
+                    </div>
+                </div>
+                <div class="step scroll-reveal" data-delay="1">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Track your progress over time</h3>
+                        <p>Complete activities and rate your experience. Our intelligent reflection prompts help you capture how you really felt.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/screenshot5.jpg" alt="Step 2">
+                    </div>
+                </div>
+                <div class="step scroll-reveal" data-delay="2">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Find what works for YOU</h3>
+                        <p>Get personalized insights based on your patterns. Discover what activities boost your mood and when you perform best.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="assets/screenshot2.jpg" alt="Step 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Showcase -->
+    <section class="showcase-section">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>Designed for your journey</h2>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item scroll-reveal" data-delay="0">
+                    <div class="showcase-icon">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <h3>Daily Inspiration</h3>
+                    <p>Start each day with motivational quotes tailored to your journey</p>
+                </div>
+                <div class="showcase-item scroll-reveal" data-delay="1">
+                    <div class="showcase-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3>Beautiful Themes</h3>
+                    <p>Customize your experience with 40+ gorgeous color palettes</p>
+                </div>
+                <div class="showcase-item scroll-reveal" data-delay="2">
+                    <div class="showcase-icon">
+                        <i data-lucide="folder-kanban"></i>
+                    </div>
+                    <h3>Smart Categories</h3>
+                    <p>Organize by Strong, Smart, Happy, and Organized</p>
+                </div>
+                <div class="showcase-item scroll-reveal" data-delay="3">
+                    <div class="showcase-icon">
+                        <i data-lucide="bar-chart-2"></i>
+                    </div>
+                    <h3>Progress Analytics</h3>
+                    <p>Visualize your growth with detailed charts and trends</p>
+                </div>
+                <div class="showcase-item scroll-reveal" data-delay="4">
+                    <div class="showcase-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>Adaptive Questions</h3>
+                    <p>Reflection prompts that evolve based on your responses</p>
+                </div>
+                <div class="showcase-item scroll-reveal" data-delay="5">
+                    <div class="showcase-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays on your device with optional iCloud sync</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>Loved by people building better habits</h2>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"Brightli helped me finally understand why some mornings I feel energized and others I don't. The reflection questions are genuinely helpful!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <strong>Sarah M.</strong>
+                                <span>Teacher</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"I've tried dozens of productivity apps. This is the first one that actually helped me change my habits instead of just tracking them."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <strong>Marcus J.</strong>
+                                <span>Software Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"The insights are incredible. I discovered that my evening runs boost my mood way more than morning ones. Game changer!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PK</div>
+                            <div class="author-info">
+                                <strong>Priya K.</strong>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots" id="carouselDots">
+                    <button class="dot active" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                    <button class="dot" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section" id="download">
+        <div class="container">
+            <div class="cta-card scroll-reveal">
+                <div class="cta-bg">
+                    <div class="cta-orb cta-orb-1"></div>
+                    <div class="cta-orb cta-orb-2"></div>
+                </div>
+                <div class="cta-content">
+                    <h2>Ready to close the loop?</h2>
+                    <p>Start your journey to meaningful growth today.</p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com/app/brightli" class="btn btn-primary btn-large" target="_blank">
+                            <i data-lucide="download"></i>
+                            Download for iOS
+                        </a>
+                        <a href="#coming-soon" class="btn btn-secondary btn-large">
+                            Coming to Android
+                        </a>
+                    </div>
+                    <p class="cta-note">Free forever • Premium at $4.99/mo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <span class="logo-text">Brightli</span>
+                    </a>
+                    <p class="footer-tagline">Be inspired to grow every day</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul class="footer-links">
+                            <li><a href="getting-started.html">Getting Started</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="how-tos.html">How-Tos</a></li>
+                            <li><a href="support.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/brightliapp" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@brightliapp" target="_blank" aria-label="TikTok">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                        </a>
+                        <a href="https://x.com/brightliapp" target="_blank" aria-label="X (Twitter)">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://bsky.app/profile/brightliapp.bsky.social" target="_blank" aria-label="BlueSky">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brightli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-new.js"></script>
+</body>
+</html>
