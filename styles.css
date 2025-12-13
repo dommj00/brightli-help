@@ -1065,6 +1065,538 @@ section {
     font-size: 0.875rem;
 }
 
+/* ===== PAGE HERO (Inner Pages) ===== */
+.page-hero {
+    position: relative;
+    padding: 140px 0 60px;
+    overflow: hidden;
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-hero-content > p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+/* ===== HELP SECTION ===== */
+.help-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.help-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.help-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--glass-border-accent);
+}
+
+.help-card-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--primary-amber-light);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-amber);
+    flex-shrink: 0;
+    transition: all var(--transition-base);
+}
+
+.help-card-icon i {
+    width: 28px;
+    height: 28px;
+}
+
+.help-card:hover .help-card-icon {
+    background: linear-gradient(135deg, var(--primary-amber), var(--primary-orange));
+    color: white;
+}
+
+.help-card-content {
+    flex: 1;
+}
+
+.help-card-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.help-card-content p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.help-card-arrow {
+    color: var(--text-muted);
+    transition: all var(--transition-base);
+}
+
+.help-card-arrow i {
+    width: 20px;
+    height: 20px;
+}
+
+.help-card:hover .help-card-arrow {
+    color: var(--primary-amber);
+    transform: translateX(4px);
+}
+
+/* ===== HELP CTA SECTION ===== */
+.help-cta-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+}
+
+.help-cta-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.help-cta-icon {
+    width: 72px;
+    height: 72px;
+    background: var(--primary-amber-light);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-amber);
+    margin: 0 auto var(--spacing-md);
+}
+
+.help-cta-icon i {
+    width: 36px;
+    height: 36px;
+}
+
+.help-cta-card h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.help-cta-card > p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.help-cta-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    padding: var(--spacing-md) 0 var(--spacing-xl);
+    transition: color var(--transition-fast);
+}
+
+.back-link i {
+    width: 18px;
+    height: 18px;
+    transition: transform var(--transition-fast);
+}
+
+.back-link:hover {
+    color: var(--primary-amber);
+}
+
+.back-link:hover i {
+    transform: translateX(-4px);
+}
+
+/* ===== GUIDES SECTION (How-Tos) ===== */
+.guides-section {
+    padding: var(--spacing-lg) 0;
+}
+
+.guides-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Guide Accordion */
+.guide-accordion {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.guide-accordion:hover {
+    border-color: var(--glass-border-accent);
+}
+
+.guide-accordion.active {
+    border-color: var(--primary-amber);
+    box-shadow: var(--shadow-md);
+}
+
+.guide-accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.guide-accordion-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--primary-amber-light);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-amber);
+    flex-shrink: 0;
+    transition: all var(--transition-base);
+}
+
+.guide-accordion-icon i {
+    width: 28px;
+    height: 28px;
+}
+
+.guide-accordion.active .guide-accordion-icon {
+    background: linear-gradient(135deg, var(--primary-amber), var(--primary-orange));
+    color: white;
+}
+
+.guide-accordion-title {
+    flex: 1;
+}
+
+.guide-accordion-title h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.guide-accordion-title p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.guide-accordion-toggle {
+    color: var(--text-muted);
+    transition: transform var(--transition-base);
+}
+
+.guide-accordion-toggle i {
+    width: 24px;
+    height: 24px;
+}
+
+.guide-accordion.active .guide-accordion-toggle {
+    transform: rotate(180deg);
+    color: var(--primary-amber);
+}
+
+.guide-accordion-content {
+    display: none;
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    border-top: 1px solid var(--glass-border);
+    margin-top: -1px;
+}
+
+.guide-accordion.active .guide-accordion-content {
+    display: block;
+}
+
+.guide-intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+.guide-intro h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.guide-intro p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.guide-accordion-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.guide-accordion-content h3:first-child {
+    margin-top: var(--spacing-md);
+}
+
+.guide-accordion-content > p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Guide Steps */
+.guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.guide-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(245, 158, 11, 0.05);
+    border-radius: var(--radius-lg);
+}
+
+.guide-step-number {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--primary-amber), var(--primary-orange));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.guide-step-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.guide-step-content p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Guide Notes */
+.guide-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-md);
+}
+
+.guide-note i {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.guide-note strong {
+    display: block;
+    font-size: 0.9375rem;
+    margin-bottom: 0.25rem;
+}
+
+.guide-note p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.guide-note.info {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.guide-note.info i {
+    color: #6366F1;
+}
+
+.guide-note.info strong {
+    color: #4F46E5;
+}
+
+.guide-note.tip {
+    background: var(--primary-amber-light);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.guide-note.tip i {
+    color: var(--primary-amber);
+}
+
+.guide-note.tip strong {
+    color: var(--primary-orange);
+}
+
+.guide-note.warning {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.guide-note.warning i {
+    color: #EF4444;
+}
+
+.guide-note.warning strong {
+    color: #DC2626;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+}
+
+/* Rating Paths */
+.rating-paths {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.rating-path {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+}
+
+.rating-path.high {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+.rating-path.mid {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.rating-path.low {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.rating-stars {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating-stars i {
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-amber);
+    color: var(--primary-amber);
+}
+
+.rating-path strong {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.rating-path p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Delete Info */
+.delete-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.delete-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: var(--radius-md);
+}
+
+.delete-item strong {
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+}
+
+.delete-item p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -1166,6 +1698,15 @@ section {
     
     .footer-brand {
         grid-column: span 2;
+    }
+    
+    /* Help page tablet */
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1314,6 +1855,95 @@ section {
     
     .social-links {
         justify-content: center;
+    }
+    
+    /* Help page mobile */
+    .page-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .page-hero-content > p {
+        font-size: 1rem;
+    }
+    
+    .help-card {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-md);
+    }
+    
+    .help-card-arrow {
+        display: none;
+    }
+    
+    .help-cta-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .help-cta-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .help-cta-buttons {
+        flex-direction: column;
+    }
+    
+    /* How-to page mobile */
+    .guide-accordion-header {
+        padding: var(--spacing-md);
+        flex-wrap: wrap;
+    }
+    
+    .guide-accordion-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .guide-accordion-icon i {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .guide-accordion-title h2 {
+        font-size: 1.0625rem;
+    }
+    
+    .guide-accordion-title p {
+        font-size: 0.875rem;
+    }
+    
+    .guide-accordion-content {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+    }
+    
+    .guide-step {
+        padding: var(--spacing-sm);
+    }
+    
+    .guide-step-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+    
+    .guide-step-content h4 {
+        font-size: 0.9375rem;
+    }
+    
+    .guide-step-content p {
+        font-size: 0.875rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .guide-note {
+        padding: var(--spacing-sm);
     }
 }
 
