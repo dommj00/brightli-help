@@ -3,119 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Brightli - Learn about our mission and vision">
+    <meta name="description" content="About Brightli - Learn about our mission to help you understand what makes you thrive">
     <title>About - Brightli</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="nav-logo">
-                    <a href="index.html"><span class="logo-text">Brightli</span></a>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="sun"></i>
                 </div>
-                <div class="nav-links" id="navLinks">
-                    <a href="about.html">About</a>
-                    <a href="index.html#features">Features</a>
-                    <a href="index.html#how-it-works">How It Works</a>
-                    <a href="help.html">Help Center</a>
-                    <a href="faqs.html">FAQs</a>
-                    <a href="index.html#download" class="btn-nav">Download</a>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <span class="logo-text">Brightli</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="about.html">About</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="help.html">Help</a>
+                <a href="index.html#download" class="btn-nav">Download</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- About Content -->
-    <div class="about-page-container">
-        <div class="about-page-header">
-            <h1>About Brightli</h1>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
         </div>
-
-        <div class="videos-container">
-            <!-- Video 1: Welcome to Brightli -->
-            <div class="video-section">
-                <h2>Welcome to Brightli</h2>
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/6iwX1Ocb_dw" 
-                        title="Welcome to Brightli" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
+        <div class="container">
+            <div class="page-hero-content scroll-reveal">
+                <div class="hero-badge">
+                    <i data-lucide="heart"></i>
+                    <span>Our Story</span>
                 </div>
-            </div>
-
-            <!-- Video 2: The Birth of Brightli -->
-            <div class="video-section">
-                <h2>The Birth of Brightli</h2>
-                <div class="video-wrapper">
-                    <iframe 
-                        src="https://www.youtube.com/embed/OdI6fWqpvK4" 
-                        title="The Birth of Brightli" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                <h1>About Brightli</h1>
+                <p>Helping you understand what makes you thrive</p>
             </div>
         </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="about-videos-section">
+        <div class="container">
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card scroll-reveal" data-delay="0">
+                    <div class="video-card-header">
+                        <div class="video-icon">
+                            <i data-lucide="play-circle"></i>
+                        </div>
+                        <h2>Welcome to Brightli</h2>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/6iwX1Ocb_dw" 
+                            title="Welcome to Brightli" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-description">Discover how Brightli helps you close the productivity loop through intelligent reflection.</p>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card scroll-reveal" data-delay="1">
+                    <div class="video-card-header">
+                        <div class="video-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h2>The Birth of Brightli</h2>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/OdI6fWqpvK4" 
+                            title="The Birth of Brightli" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-description">Learn the story behind Brightli and why we built the only planner with reflection intelligence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="about-mission-section">
+        <div class="container">
+            <div class="mission-card scroll-reveal">
+                <div class="mission-icon">
+                    <i data-lucide="target"></i>
+                </div>
+                <h2>Our Mission</h2>
+                <p>We believe that true productivity isn't about doing more—it's about understanding what works for <em>you</em>. Brightli was created to bridge the gap between planning and growing, helping you discover patterns in your behavior and make informed changes that stick.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="about-values-section">
+        <div class="container">
+            <div class="section-header centered scroll-reveal">
+                <h2>What We Stand For</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card scroll-reveal" data-delay="0">
+                    <div class="value-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays yours. Local storage by default, with optional iCloud sync to your personal account.</p>
+                </div>
+                <div class="value-card scroll-reveal" data-delay="1">
+                    <div class="value-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Insight Over Tracking</h3>
+                    <p>We don't just count your habits—we help you understand why some work and others don't.</p>
+                </div>
+                <div class="value-card scroll-reveal" data-delay="2">
+                    <div class="value-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <h3>Supportive, Not Judgmental</h3>
+                    <p>No guilt trips. No streaks to break. Just thoughtful questions to help you grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="help-cta-section">
+        <div class="container">
+            <div class="help-cta-card scroll-reveal">
+                <div class="help-cta-icon">
+                    <i data-lucide="download"></i>
+                </div>
+                <h2>Ready to start your journey?</h2>
+                <p>Download Brightli and discover what makes you thrive.</p>
+                <div class="help-cta-buttons">
+                    <a href="index.html#download" class="btn btn-primary">
+                        <i data-lucide="smartphone"></i>
+                        Download App
+                    </a>
+                    <a href="getting-started.html" class="btn btn-secondary">
+                        <i data-lucide="book-open"></i>
+                        Getting Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back Link -->
+    <div class="container">
+        <a href="index.html" class="back-link scroll-reveal">
+            <i data-lucide="arrow-left"></i>
+            Back to Home
+        </a>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3 class="footer-logo">Brightli</h3>
-                    <p class="footer-tagline">Be inspired to grow Everyday</p>
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <span class="logo-text">Brightli</span>
+                    </a>
+                    <p class="footer-tagline">Be inspired to grow every day</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <div class="footer-links">
-                        <a href="index.html#features">Features</a>
-                        <a href="index.html#how-it-works">How It Works</a>
-                        <a href="getting-started.html">Getting Started</a>
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul class="footer-links">
+                            <li><a href="getting-started.html">Getting Started</a></li>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="how-tos.html">How-Tos</a></li>
+                            <li><a href="support.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <div class="footer-links">
-                        <a href="help.html">Help Center</a>
-                        <a href="faqs.html">FAQs</a>
-                        <a href="support.html">Contact</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <div class="footer-links">
-                        <a href="privacy.html">Privacy</a>
-                        <a href="terms.html">Terms</a>
-                    </div>
-                </div>
-                <div class="footer-column">
+                <div class="footer-social">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://instagram.com/brightliapp" target="_blank" aria-label="Instagram">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <a href="https://www.instagram.com/brightliapp" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
-                        <a href="https://tiktok.com/@brightliapp" target="_blank" aria-label="TikTok">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                        <a href="https://www.tiktok.com/@brightliapp" target="_blank" aria-label="TikTok">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                         </a>
                         <a href="https://x.com/brightliapp" target="_blank" aria-label="X (Twitter)">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
                         <a href="https://bsky.app/profile/brightliapp.bsky.social" target="_blank" aria-label="BlueSky">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -127,8 +241,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>
